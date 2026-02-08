@@ -1,0 +1,178 @@
+/* ベース設定 */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* コンテナ */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+  background: #232f3e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ff9900;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a i {
+  margin-right: 6px;
+  color: #f7941d; /* AWSオレンジ */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ヒーローセクション */
+.hero {
+  background: linear-gradient(135deg, #232f3e, #31465b);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ff9900;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #cc7a00;
+}
+
+/* セクション */
+.section {
+  padding: 2rem 1rem;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #232f3e;
+}
+
+/* 動画カード */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin: 0.8rem 0 0.4rem;
+  color: #232f3e;
+}
+
+.video-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* タグ */
+.tags {
+  margin-top: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #ff9900;
+  color: white;
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  margin-right: 4px;
+}
+
+/* フッター */
+footer {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ▼スマホ対応▼ */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
