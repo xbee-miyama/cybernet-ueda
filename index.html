@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS 学習ポータル</title>
+  <link rel="stylesheet" href="style.css?v=1.1.0" />
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="container">
+      <h1>AWS 学習ポータル</h1>
+      <nav>
+        <ul>
+          <li><a href="#blackbelt">公式セミナー</a></li>
+          <li><a href="#exam">資格対策</a></li>
+          <li><a href="#intro">入門講座</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>ゼロから始める AWS 学習ポータル</h2>
+      <p>S3・CloudFront・Route53・ACMなど、AWSの基本を動画で体系的に学ぶ。</p>
+      <a href="#videos" class="btn">動画一覧へ</a>
+    </div>
+  </section>
+
+  <!-- 動画セクション -->
+  <main id="videos">
+    <section id="blackbelt" class="section">
+      <h2>AWS 公式セミナー</h2>
+      <div class="videos-grid">
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/mmRKzzOvJJY" frameborder="0" allowfullscreen></iframe>
+          <h3>Amazon CloudFront の概要</h3>
+          <p>CDNサービス CloudFront の特徴や仕組みを、AWS公式が丁寧に解説。</p>
+          <div class="tags">
+            <span class="tag">#CloudFront</span><span class="tag">#BlackBelt</span><span class="tag">#AWS公式</span>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/QNylm0CktHA" frameborder="0" allowfullscreen></iframe>
+          <h3>Amazon CloudFront（基礎編）【AWS Black Belt】</h3>
+          <p>CloudFrontのキャッシュや配信最適化を理解するための基礎講座。</p>
+          <div class="tags">
+            <span class="tag">#CDN</span><span class="tag">#配信最適化</span><span class="tag">#AWS公式</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="exam" class="section">
+      <h2>資格対策</h2>
+      <div class="videos-grid">
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/bRIIf5EcDkY" frameborder="0" allowfullscreen></iframe>
+          <h3>AWSはこの順番で学びなさい！学習ロードマップ最新版</h3>
+          <p>AWSの全体像と学ぶ順番を丁寧に解説。効率的な学習戦略を理解できます。</p>
+          <div class="tags">
+            <span class="tag">#AWS学習</span><span class="tag">#ロードマップ</span><span class="tag">#入門</span>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/lJTh8n_q3Zw" frameborder="0" allowfullscreen></iframe>
+          <h3>AWS認定 SAA 試験対策講座</h3>
+          <p>ソリューションアーキテクトアソシエイト試験に合格するための実践テクニック。</p>
+          <div class="tags">
+            <span class="tag">#資格対策</span><span class="tag">#SAA</span><span class="tag">#AWS認定</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="intro" class="section">
+      <h2>入門講座</h2>
+      <div class="videos-grid">
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/aisjtbOzu8o" frameborder="0" allowfullscreen></iframe>
+          <h3>AWS入門総集編 - Webサイト公開まで解説！</h3>
+          <p>S3・CloudFront・Route53・ACMを使い、AWSでWebページを公開する手順を解説。</p>
+          <div class="tags">
+            <span class="tag">#S3</span><span class="tag">#CloudFront</span><span class="tag">#Route53</span><span class="tag">#ACM</span>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/GDId-KvEVuc?start=73" frameborder="0" allowfullscreen></iframe>
+          <h3>DynamoDBとElasticsearch Serviceを組み合わせて、簡単な全文検索を実装してみた話</h3>
+          <p>DynamoDBとElasticsearch Serviceを組み合わせて、簡単な全文検索機能を実装してみた事例の連携部分を中心に紹介</p>
+          <div class="tags">
+            <span class="tag">#DynamoDB</span><span class="tag">#Elasticsearch</span>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/3HwYMYCMYqQ" frameborder="0" allowfullscreen></iframe>
+          <h3>【AWS入門+α】S3 + CloudFront でウェブアプリを配信してみよう！解説+ハンズオン付き</h3>
+          <p>S3とCloudFrontを組み合わせた静的サイト配信を体験。S3バケット設定からCloudFront連携までを解説。</p>
+          <div class="tags">
+            <span class="tag">#S3</span><span class="tag">#CloudFront</span><span class="tag">#ハンズオン</span><span class="tag">#ACM</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>© 2025 AWS 学習ポータル ｜ <a href="https://aws.amazon.com/jp/" target="_blank" rel="noopener">AWS公式サイト</a></p>
+  </footer>
+</body>
+</html>
